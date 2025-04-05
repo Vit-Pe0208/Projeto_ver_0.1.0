@@ -1,0 +1,119 @@
+/* css do cabeçalho, inclui header, com o cabeçalho, banner e menu superior e inferior*/
+
+/* css do header*/
+header{
+    background-color: black;/* determinar cor de fundo preta*/
+    color: white;/* determinar cor branca nas letras*/
+    text-align: center;/* alinha título do cabeçalho*/
+}
+/* div do cabeçalho*/
+#cabecalho{
+    display: flex;/* determinar flexiblidade para os blocos internos da div cabeçalho*/
+    flex-direction: row;/* Alinhar em linhas oa divs internas*/
+    justify-content: right;/* colocar as divs internas na direita*/
+    padding: 30px;/* estabelecer margem interna das div cabeçalho*/
+    gap: 250px;/*espaços entre as divs internas*/
+}
+/* estabelecer fontes de textos baixados na internet*/
+@font-face {
+    font-family:'fonteDotitulo' ;/* atribuindo nome para a fonte: 'fonteDotitulo'*/
+    src: url(./fontes./blankriver.ttf);/* Url da fonte localizada pelo caminho "assents->style->fontes->blankriver.ttf" */
+}
+/* título do cabeçalho*/
+#cabecalho #titulocabecalho h1{
+    font-family: 'fonteDotitulo';/*determinando a fonte: 'fonteDotitulo' para o título do cabeçalho*/
+    margin-top: 12px;/*margin em relação ao topo da página para o título*/
+}
+/*input do tipo search da div searchBar interna da div cabeçalho*/
+#cabecalho #searchBar{
+    width: 200px;
+    height: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    
+}
+/*Input search*/
+#cabecalho #searchBar input[type='search']{
+        position: absolute;/*posição absoluta em relação a div searchBar*/
+        height: 100%;/*Altura de 100%*/
+        width: 100%;/*Largura de 100%*/
+        border: none;/*sem borda no input*/
+        font-size: 10px;/*Tamanho da letra*/
+        padding-left: 10px;/*Espaçãmento em relação à esquerda*/
+        border-radius: 10px;/*arredeondamento do input*/
+        padding: 15px;
+        
+        
+}
+/*Estlizando a lupa dentro do input*/
+#cabecalho #searchBar i{
+    position: absolute;
+    right: 5px;
+    font-size: 10px;
+    color: gray;
+    cursor: pointer;
+    margin-right: 7px;
+}
+/*ícones do cabeçalho*/
+#cabecalhoButtons img{
+    
+   padding: 10px; /*estabelecer tamanho das imagens*/
+   margin-bottom: 9px;/*estabelecer 9px de margem em relação ao topo da página*/
+}
+/*Div da menu superior de header*/
+#menuSuperior{
+    
+    color: rgb(238, 234, 234);/*estabelecer cores brancas para as letras*/
+    padding: 20px;/*estabelecer espaçamento interno da div #menuSuperio*/
+    border-top: 2px dashed;/*estabelecer linha pontilhada para separar o menu do cabeçalho*/
+}
+/*Div para a organização das listas da div #menuSuperior */
+#menuSuperior ul{
+    display:inline-flex;/* estabelecer alinhamento flexível paras as li do ul*/
+    gap: 150px;/*estabelecer espaçamentos entre as li*/
+
+}
+
+/*listas da menu superior*/
+#menuSuperior ul li{
+    list-style: none;/* retirando pontinhos das listas*/  
+}
+/*estilizar tag a do menu superior*/
+#menuSuperior ul li a{
+   text-decoration: none;
+   color: white;
+}
+
+
+
+/*Div para o banner */
+#bannerSuperior img{
+    width: 100%;/*Estabelecer tamanho 100% do banner de largura na div #bannerSuperior */
+    height: 100%;/*Estabelecer tamanho 100% do banner de altura na div #bannerSuperior */
+}
+/*Div para o menu inferior */
+#menuInferior{
+    background-color: black;/*Estabelecer cor preta de fundo*/
+    color: white;/*Estabelecer cores brancas*/
+}
+/*Div para a organização das listas da div #menuInferior */
+#menuInferior ul{
+    display: inline-flex;/* estabelecer alinhamento flexível paras as li do ul*/
+    margin-left: 20%;/*estabelecer tamanho de 20% de espaçamento para a margem esquerda da div*/
+    gap: 100px;/*Espaçamento entra as li do ul */
+    padding: 20px;/*espaçamento interno da  ul */
+   
+    
+}
+/*estilizar listas do menu inferior*/
+#menuInferior ul li{ 
+    list-style: none;  /*Retirar os pontinhos das listas*/
+}
+
+/*estlizar tag a do menu inferior*/
+#menuInferior ul li a{
+    color: white;
+    text-decoration: none;
+}
