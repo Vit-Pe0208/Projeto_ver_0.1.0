@@ -1,0 +1,107 @@
+
+/*Rodapé da página*/
+footer{
+    width: 100%;/*Rodapé ocupando 100% de largura da página*/
+    display: flex;/*Flexiblizando o conteúdo interno do footer*/
+    flex-direction: row;/*Estabelecendo um direção alinhada dos blocos internos do footer */
+    
+   
+}
+/*Título do tipo h1 do footer lado esquerdo*/
+footer h1{
+    text-align: center;/*Centralizando o título*/
+    font-family: 'fonteDotitulo';/*estabelenco fonte: 'fonteDotitulo' para o título*/
+}
+/*Div esquerda do footer*/
+#footerLeft{
+    background-color: black;/*estabelencedo cor de fundo preta para o footer esquerdo*/
+    color: white;/*estabelecendo cores de letras brancas para o footer esquerdo*/
+    width: 95%;/*estabelenco largura de 95% da página para o footer esquerdo*/
+
+}
+/*Conteúdo do footer*/
+#footerLeftColumns{
+   
+    display: flex;/*Flexiblizando as 4 colunas*/
+    flex-direction: row;/*Alinhando as quatro colunas*/
+    margin-left: 10%;/*Estabelecendo 10% de distanciamento do lado esquerdo*/
+    gap: 15%;/*espaçamento entre as colunas*/
+}
+/*Conteúdo das linhas das colunas*/
+.columFooter ul li{
+   list-style: none;/*Retirando os pontinhos das listas*/
+   margin-top: 50px;/*espaçamento entre as linhas*/
+       
+}
+/*Div para a estilização dos ícones*/
+#footerLeftButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+/*Div direita do footer*/
+#footerRigth{
+    background-color: rgb(63, 4, 63);/*Cor de fundo da div direita do footer*/
+    width: 27%;/*largura do footer da direita*/
+}
+
+/*Título do tipo h3 do footer direito*/
+#tituloRodepeRight{
+    margin-top: 25px;/*distanciamento em relação ao topo do título*/
+    margin-left: 30px;/*distancimento em relação a margem esquerda do título*/
+    font-size: 20px;/*fonte da letra do título*/
+    text-align: justify;/*título justificado*/
+    color: white;/*cor da letra do título*/
+}
+
+/*paragrafo do tipo h3 do footer direito*/
+#paragrafoRodapeRight{
+    margin-top: 50px;/*Distanciamento em relação ao topo do paragrafo*/
+    margin-left: 30px;/*distancimento em relação a margem esquerda do paragrafo*/
+    font-size: 20px;/*fonte da letra do paragrafo*/
+    text-align: justify;/*paragrafo justificado*/
+    color: white;/*cor da letra do paragrafo*/
+}
+#inputFooterDireito{
+    width: 200px;
+    height: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 30px;
+  
+    
+}
+/*Input do tipo text do footer direito*/
+#footerRigth #inputFooterDireito input[type='email']{
+
+    position: absolute;/*posição absoluta em relação a div searchBar*/
+    height: 100%;/*Altura de 100%*/
+    width: 100%;/*Largura de 100%*/
+    border: none;/*sem borda no input*/
+    font-size: 10px;/*Tamanho da letra*/
+    padding-left: 10px;/*Espaçãmento em relação à esquerda*/
+    border-radius: 10px;/*arredeondamento do input*/
+    padding: 20px;
+}
+/*Estilizar o icone de email dentro do input*/
+#footerRigth #inputFooterDireito i{
+    position: absolute;
+    right: 5px;
+    font-size: 15px;
+    color: rgb(7, 7, 7);
+    cursor: pointer;
+    margin-right: 5px;
+    height: 10px;
+}
+
+
+
+
+
+
+
+
